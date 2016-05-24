@@ -20,7 +20,8 @@ class CategoryController extends Controller
     {
         //
          $categories = DB::table('categories')->get();
-        return $categories;
+       return $categories;
+        
     }
 
     /**
