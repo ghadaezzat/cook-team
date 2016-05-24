@@ -11,6 +11,13 @@
 |
 */
 
+use Illuminate\Database\Eloquent\Model\Category;
+
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
+
+Route::get('index', [
+	'as'=>'index',
+	'uses'=>'CategoryController@index'
+]);
